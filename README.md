@@ -4,6 +4,14 @@ Este proyecto describe en qué sectores pesa más el empleo de Baja California S
 
 El análisis completo está en el notebook; este README es un resumen.
 
+## Abstract
+
+This project describes which sectors have a higher share of employment in Baja California Sur (BCS) than in Mexico, and how this changed between 2008 and 2023. It is a descriptive analysis: it has no models and does not explain causes. I used total employed persons by sector from the INEGI Economic Census for 2008, 2013, 2018 and 2023. With Python (pandas and Matplotlib), I calculated the location quotient (LQ), expected and excess employment, and the Herfindahl-Hirschman Index (HHI).
+
+Four sectors had an LQ above 1 in all four years. Fishing and aquaculture had the highest LQ every year (between 7.255 and 3.737). Accommodation and food services had the largest excess employment in all years. The HHI rose from 0.1366 to 0.1481 (+8.4%), so employment became slightly more concentrated. Without sector 56, which has comparability problems, the rise was +4.3%: the HHI grew until 2018 and fell in 2023.
+
+Limitations: the LQ compares relative shares, not sector size. The HHI measures concentration, not specialization. I assigned zero to sector 55 in BCS, which is an inference.
+
 ## Contenido
 
 - [Preguntas que responde](#preguntas-que-responde)
